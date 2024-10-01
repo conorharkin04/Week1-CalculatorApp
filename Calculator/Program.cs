@@ -45,7 +45,9 @@ void CalculatorApp()
     }
     catch (Exception ex)
     {
-
+        // Handle the case where the input is not valid
+        // and show the user the error message content.
+        Console.WriteLine($"Error:{ex.Message}. Please enter a valid operation.");
     }
     finally
     {
